@@ -162,20 +162,25 @@ export default function MarketSwitcher({ toTop, className, textButton }: MarketS
       </style>
       <style jsx={true} global={true}>{`
         .MarketSwitcher {
+          border-color: black;
+          border-width: 2px;
+          border-style: dashed;
+          background: white;
+
           &__text-button {
             color: ${currentTheme.primary.hex};
           }
 
           &__button-content {
             color: ${currentTheme.white.hex};
-            background: ${currentTheme.darkBlue.hex};
+            //background: ${currentTheme.darkBlue.hex};
             &:hover {
               border-color: ${currentTheme.white.hex};
             }
           }
           &__buttonActive {
             .MarketSwitcher__button-content {
-              border-color: ${currentTheme.white.hex};
+              //border-color: ${currentTheme.white.hex};
             }
           }
           &__firstClickButton {
@@ -192,18 +197,18 @@ export default function MarketSwitcher({ toTop, className, textButton }: MarketS
 
           &__title {
             color: ${currentTheme.darkBlue.hex};
-            border-bottom: 1px solid ${currentTheme.darkBlue.hex};
+            //border-bottom: 1px solid ${currentTheme.darkBlue.hex};
           }
 
           &__market {
             position: relative;
             border-bottom: 1px solid ${transparentDarkColor};
             &:hover {
-              background: ${transparentDarkColor};
+              //background: ${transparentDarkColor};
             }
           }
           &__marketActive {
-            background: ${transparentDarkColor};
+            //background: ${transparentDarkColor};
           }
 
           &__logo-inner {

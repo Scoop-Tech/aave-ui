@@ -97,7 +97,8 @@ export default function Menu({ title }: MenuProps) {
       </style>
       <style jsx={true} global={true}>{`
         .Menu {
-          background: ${currentTheme.headerBg.hex};
+          //background: ${currentTheme.headerBg.hex};
+          background: white;
           &:after {
             background: ${topLineColor};
           }
