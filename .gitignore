@@ -1,6 +1,7 @@
 /.env.local
 /.env.production
 tests/.env
+tests/metamask/metamaskChrome
 node_modules/
 package.temp.json
 .expo/*
