@@ -29,16 +29,16 @@ There's a github action commenting the appropriate IPFS hash embedded in the Clo
 
 For ease of use:
 
-- the DNS of [https://staging.aave.com](https://staging.aave.com) will always point to the latest master IPFS hash with all networks enabled
-- the DNS of [https://app.aave.com](https://app.aave.com) will always point to the latest master IPFS hash with disabled test networks
+- the DNS of [https://staging.co2fi.io](https://staging.co2fi.io) will always point to the latest master IPFS hash with all networks enabled
+- the DNS of [https://app.co2fi.io](https://app.co2fi.io) will always point to the latest master IPFS hash with disabled test networks
 
 ## Troubleshooting
 
-Issue: I cannot connect to `app.aave.com`
+Issue: I cannot connect to `app.co2fi.io`
 
-The aave-ui is hosted on IPFS in a decentralized manner. `app.aave.com` just holds a CNAME record to the Cloudflare IPFS gateway. You can use [any](https://ipfs.github.io/public-gateway-checker/) public or private IPFS gateway supporting origin isolation to access aave-ui if for some reason the Cloudflare gateway doesn't work for you
+The aave-ui is hosted on IPFS in a decentralized manner. `app.co2fi.io` just holds a CNAME record to the Cloudflare IPFS gateway. You can use [any](https://ipfs.github.io/public-gateway-checker/) public or private IPFS gateway supporting origin isolation to access aave-ui if for some reason the Cloudflare gateway doesn't work for you
 
-Just go to `<your favorite public ipfs gateway>/ipns/app.aave.com`
+Just go to `<your favorite public ipfs gateway>/ipns/app.co2fi.io`
 
 ⚠️ Make sure the gateway supports origin isolation to avoid possible security issues: you should be redirected to URL that looks like `https://app-aave-com.<your gateway>`
 
