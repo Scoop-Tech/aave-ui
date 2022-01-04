@@ -22,6 +22,7 @@ export default function SelectMarketPanel({ isCollapse }: SelectMarketPanelProps
 
   return (
     <div className={classNames('SelectMarketPanel', { SelectMarketPanel__collapse: isCollapse })}>
+      {/* //** select chain */}
       <div className="SelectMarketPanel__markets">
         {availableMarkets.map((market) => {
           const marketData = marketsData[market];
