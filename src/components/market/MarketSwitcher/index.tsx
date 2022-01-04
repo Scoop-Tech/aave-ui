@@ -164,7 +164,7 @@ export default function MarketSwitcher({ toTop, className, textButton }: MarketS
         .MarketSwitcher {
           border-color: black;
           border-width: 2px;
-          border-style: dashed;
+          border-style: solid;
           background: white;
 
           &__text-button {
@@ -172,7 +172,7 @@ export default function MarketSwitcher({ toTop, className, textButton }: MarketS
           }
 
           &__button-content {
-            color: ${currentTheme.white.hex};
+            //color: ${currentTheme.white.hex};
             //background: ${currentTheme.darkBlue.hex};
             &:hover {
               border-color: ${currentTheme.white.hex};

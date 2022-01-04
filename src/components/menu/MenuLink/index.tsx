@@ -46,7 +46,6 @@ export default function MenuLink({ to, title, isActive, hidden }: MenuLinkProps)
       </style>
       <style jsx={true} global={true}>{`
         .MenuLink {
-          color: ${currentTheme.white.hex} !important;
           .MenuLink__title {
             i {
               background: ${activeGradient} !important;
