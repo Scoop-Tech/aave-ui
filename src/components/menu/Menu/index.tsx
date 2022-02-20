@@ -43,7 +43,14 @@ export default function Menu({ title }: MenuProps) {
     <header className="Menu">
       <div className="Menu__logo-inner">
         <Link className="Menu__logo-link" to="/markets" onClick={() => goToTop()}>
-          <img src={LOGO} alt="Aave" />
+          <img
+            style={{
+              width: '208px',
+              height: '58px',
+            }}
+            src={LOGO}
+            alt="Aave"
+          />
         </Link>
       </div>
 
@@ -87,7 +94,6 @@ export default function Menu({ title }: MenuProps) {
         </div>
 
         <div className="Menu__buttons-inner">
-          <MarketSwitcher />
           <AddressInfo />
         </div>
       </div>
@@ -97,8 +103,7 @@ export default function Menu({ title }: MenuProps) {
       </style>
       <style jsx={true} global={true}>{`
         .Menu {
-          //background: ${currentTheme.headerBg.hex};
-          background: white;
+          background: ${currentTheme.headerBg.hex};
           &:after {
             background: ${topLineColor};
           }

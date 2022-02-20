@@ -1,5 +1,4 @@
 import 'react-app-polyfill/stable';
-import '@aave/aave-ui-kit/dist/aave-ui-kit.cjs.development.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

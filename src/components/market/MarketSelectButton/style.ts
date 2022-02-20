@@ -82,7 +82,6 @@ const staticStyles = css.global`
     &__inner {
       position: relative;
       z-index: 2;
-      width: 150px;
       height: 45px;
       display: flex;
       align-items: center;
@@ -95,7 +94,6 @@ const staticStyles = css.global`
       transition: $transition;
       box-sizing: unset;
       @include respond-to(xl) {
-        width: 125px;
         height: 40px;
       }
       @include respond-to(sm) {

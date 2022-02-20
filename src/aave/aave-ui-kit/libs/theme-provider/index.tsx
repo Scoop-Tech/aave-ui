@@ -39,7 +39,7 @@ interface ThemeProviderProps {
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
   const [currentThemeName, setCurrentThemeName] = useState(
-    localStorage.getItem('theme') || ThemeNames.default
+    localStorage.getItem('theme') || ThemeNames.dark
   );
 
   const changeTheme = (name: string) => {

@@ -22,7 +22,7 @@ export const themes: Themes = {
     disabledGray: { hex: '#e0e0e2', rgb: [224, 224, 226] },
   },
   dark: {
-    headerBg: { hex: '#20202e', rgb: [32, 32, 46] },
+    headerBg: { hex: '#000000', rgb: [0, 0, 0] },
     mainBg: { hex: '#2b2d3c', rgb: [43, 45, 60] },
     primary: { hex: '#b6509e', rgb: [182, 80, 158] },
     secondary: { hex: '#2ebac6', rgb: [46, 186, 198] },
