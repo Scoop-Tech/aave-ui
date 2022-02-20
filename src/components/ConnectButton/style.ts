@@ -7,6 +7,7 @@ const staticStyles = css`
 
   .ConnectButton {
     position: relative;
+
     &:hover {
       &:before,
       &:after {
@@ -24,7 +25,7 @@ const staticStyles = css`
     &:before {
       content: '';
       position: absolute;
-      border-radius: $borderRadius;
+      border-radius: 100px;
       transition: all 0.3s ease;
       background-size: 300% !important;
       animation: animate 4.5s infinite;
@@ -38,10 +39,6 @@ const staticStyles = css`
       right: -2px;
     }
 
-    &:before {
-      filter: blur(2px);
-    }
-
     &__inner {
       width: 100px;
       min-height: 32px;
@@ -49,7 +46,7 @@ const staticStyles = css`
       align-items: center;
       justify-content: center;
       border: 1px solid transparent;
-      border-radius: $borderRadius;
+      border-radius: 100px;
       position: relative;
       z-index: 2;
       @include respond-to(sm) {

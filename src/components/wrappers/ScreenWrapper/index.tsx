@@ -66,16 +66,6 @@ export default function ScreenWrapper({
         ScreenWrapper__withDesktopTitle: isTitleOnDesktop,
       })}
     >
-      {sm && (
-        <Snowfall
-          color="#fff"
-          radius={[0.5, 4]}
-          snowflakeCount={50}
-          speed={[0.5, 1]}
-          wind={[-1, 1]}
-        />
-      )}
-
       {isTitleOnDesktop && (pageTitle || titleComponent) && (
         <DesktopPageTitle
           title={!!titleComponent ? titleComponent : pageTitle}

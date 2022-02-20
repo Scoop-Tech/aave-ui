@@ -10,7 +10,6 @@ import staticStyles from './style';
 
 import errorImage from './images/errorImage.svg';
 import mobileErrorImage from './images/mobileErrorImage.svg';
-import backgroundDark from '../../images/backgroundDark.svg';
 import background from '../../images/background.svg';
 
 type ErrorPageProps = {
@@ -64,12 +63,6 @@ export default function ErrorPage({
           )}
         </div>
       </div>
-
-      <img
-        className="ErrorPage__background"
-        src={isCurrentThemeDark ? backgroundDark : background}
-        alt=""
-      />
 
       <style jsx={true} global={true}>
         {staticStyles}

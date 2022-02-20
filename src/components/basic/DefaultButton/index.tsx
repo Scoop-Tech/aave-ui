@@ -68,7 +68,7 @@ export default function DefaultButton({
         @import 'src/_mixins/screen-size';
 
         .DefaultButton {
-          color: ${currentTheme.white.hex};
+          color: ${currentTheme.darkBlue.hex};
 
           &__primary {
             background: ${currentTheme.primary.hex};

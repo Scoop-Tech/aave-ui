@@ -11,9 +11,6 @@ import { BottomDisclaimer, TopDisclaimer } from '../../../ui-config';
 import messages from './messages';
 import staticStyles from './style';
 
-import background from '../../../images/background.svg';
-import backgroundDark from '../../../images/backgroundDark.svg';
-
 export interface ScreensWrapperProps {
   children: ReactNode;
 }
@@ -53,16 +50,6 @@ export default function ScreensWrapper({ children }: ScreensWrapperProps) {
         ScreensWrapper__topPanelSmall: isTopPanelSmall,
       })}
     >
-      {!sm && (
-        <Snowfall
-          color="#fff"
-          radius={[0.5, 4]}
-          snowflakeCount={50}
-          speed={[0.5, 1]}
-          wind={[-1, 1]}
-        />
-      )}
-
       <BottomDisclaimer />
 
       <TopDisclaimer />
@@ -79,12 +66,6 @@ export default function ScreensWrapper({ children }: ScreensWrapperProps) {
       </main>
 
       <Footer inside={true} />
-
-      <img
-        className="ScreensWrapper__background"
-        src={isCurrentThemeDark ? backgroundDark : background}
-        alt=""
-      />
 
       <style jsx={true} global={true}>
         {staticStyles}

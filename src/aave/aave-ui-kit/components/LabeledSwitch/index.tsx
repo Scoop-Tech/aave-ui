@@ -43,13 +43,6 @@ export default function LabeledSwitch({
       style={{ width: `${width}px`, minHeight: `${height}px` }}
     >
       <div className="LabeledSwitch__inner">
-        <div
-          className="LabeledSwitch__pointer"
-          style={{ transform: `translateX(${value ? (width || 0) / 2 - 2 : 2}px)` }}
-        >
-          <span />
-        </div>
-
         <button
           className={classNames({
             LabeledSwitch__buttonActive: !value,
