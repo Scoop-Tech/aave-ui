@@ -1,11 +1,6 @@
-import React from 'react';
 import { useIntl } from 'react-intl';
 import classNames from 'classnames';
 import { gradient, rgba, useThemeContext } from '@aave/aave-ui-kit';
-
-import GradientText from '../../basic/GradientText';
-
-import messages from './messages';
 import staticStyles from './style';
 import { ChainId } from '@aave/contract-helpers';
 import { getNetworkConfig } from '../../../helpers/config/markets-and-network-config';
@@ -35,7 +30,7 @@ export default function MarketSelectButton({
   chainId,
   isDark,
 }: MarketSelectButtonProps) {
-  const intl = useIntl();
+  useIntl();
   const { currentTheme } = useThemeContext();
   const config = getNetworkConfig(chainId);
 

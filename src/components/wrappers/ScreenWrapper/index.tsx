@@ -1,6 +1,6 @@
 import { useThemeContext } from '@aave/aave-ui-kit';
 import classNames from 'classnames';
-import React, { ReactNode, useEffect } from 'react';
+import { ReactNode, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import { useLanguageContext } from '../../../libs/language-provider';
@@ -10,7 +10,6 @@ import DesktopPageTitle from '../../DesktopPageTitle';
 import { useHeaderTitle, useWithDesktopTitle } from '../ScreensWrapper';
 
 import staticStyles from './style';
-import Snowfall from 'react-snowfall';
 
 // Pages where the banners should be displayed
 export const DISPLAY_BRIDGE_BANNER_PAGES = ['/deposit', '/repay'];
@@ -37,7 +36,7 @@ export default function ScreenWrapper({
   children,
 }: ScreenWrapperProps) {
   const { currentLangSlug } = useLanguageContext();
-  const { currentTheme, isCurrentThemeDark, sm } = useThemeContext();
+  const { currentTheme, isCurrentThemeDark } = useThemeContext();
   const {
     networkConfig: { bridge, name },
   } = useProtocolDataContext();

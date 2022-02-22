@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useIntl } from 'react-intl';
 import { useThemeContext } from '@aave/aave-ui-kit';
@@ -10,7 +10,6 @@ import staticStyles from './style';
 
 import errorImage from './images/errorImage.svg';
 import mobileErrorImage from './images/mobileErrorImage.svg';
-import background from '../../images/background.svg';
 
 type ErrorPageProps = {
   title?: string;
@@ -29,7 +28,7 @@ export default function ErrorPage({
 }: ErrorPageProps) {
   const intl = useIntl();
   const history = useHistory();
-  const { currentTheme, sm, isCurrentThemeDark } = useThemeContext();
+  const { currentTheme, sm } = useThemeContext();
 
   return (
     <div className="ErrorPage">
