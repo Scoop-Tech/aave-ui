@@ -59,12 +59,6 @@ export default function LabeledSwitcher({
 
       <style jsx={true} global={true}>{`
         .LabeledSwitch {
-          &__pointer {
-            span {
-              background: ${currentTheme.white.hex};
-            }
-          }
-
           &__inner {
             background: ${isCurrentThemeDark && darkOnDarkMode
               ? currentTheme.whiteItem.hex
@@ -81,6 +75,7 @@ export default function LabeledSwitcher({
           }
 
           button.LabeledSwitch__buttonActive {
+            background: #000;
             span {
               background-image: ${gradientText};
             }

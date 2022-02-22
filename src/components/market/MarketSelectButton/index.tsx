@@ -67,20 +67,6 @@ export default function MarketSelectButton({
       {(disabled || active) && <span className="MarketSelectButton__border" />}
 
       <div className="MarketSelectButton__inner">
-        <div className="MarketSelectButton__innerLeft">
-          <div className="MarketSelectButton__logo-inner">
-            <img src={logo} alt="" />
-            {!!logoText && !subLogo && <span>{logoText}</span>}
-          </div>
-
-          <GradientText
-            className="MarketSelectButton__marketText"
-            colorStart={isDark ? currentTheme.white.rgb : currentTheme.secondary.rgb}
-            colorEnd={isDark ? currentTheme.white.rgb : currentTheme.primary.rgb}
-            title={intl.formatMessage(messages.market)}
-          />
-        </div>
-
         {subLogo && <img className="MarketSelectButton__subLogo" src={subLogo} alt="" />}
       </div>
 

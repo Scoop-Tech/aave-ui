@@ -37,13 +37,18 @@ export default function Menu({ title }: MenuProps) {
     return `/${url.split('/')[1]}` === `/${location.pathname.split('/')[1]}`;
   };
 
-  const topLineColor = rgba(`${currentTheme.white.rgb}, 0.1`);
-
   return (
     <header className="Menu">
       <div className="Menu__logo-inner">
         <Link className="Menu__logo-link" to="/markets" onClick={() => goToTop()}>
-          <img src={LOGO} alt="Aave" />
+          <img
+            style={{
+              width: '150px',
+              height: '58px',
+            }}
+            src={LOGO}
+            alt="Aave"
+          />
         </Link>
       </div>
 
@@ -87,7 +92,6 @@ export default function Menu({ title }: MenuProps) {
         </div>
 
         <div className="Menu__buttons-inner">
-          <MarketSwitcher />
           <AddressInfo />
         </div>
       </div>
@@ -97,12 +101,7 @@ export default function Menu({ title }: MenuProps) {
       </style>
       <style jsx={true} global={true}>{`
         .Menu {
-          //background: ${currentTheme.headerBg.hex};
-          background: white;
-          &:after {
-            background: ${topLineColor};
-          }
-
+          background: ${currentTheme.headerBg.hex};
           &__title-inner {
             p {
               color: ${currentTheme.white.hex};

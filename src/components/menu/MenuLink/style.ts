@@ -59,9 +59,8 @@ const staticStyles = css.global`
         transform: translateX(-50%);
         width: 0;
         bottom: -1px;
-        height: 3px;
+        height: 2px;
         transition: all 0.4s ease;
-        border-radius: $borderRadius;
         &:after {
           content: '';
           position: absolute;
@@ -71,7 +70,7 @@ const staticStyles = css.global`
           right: 0;
           background: inherit;
           transition: $transition;
-          filter: blur(3px);
+          border-radius: $borderRadius;
         }
       }
     }

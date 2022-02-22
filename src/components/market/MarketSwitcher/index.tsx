@@ -114,58 +114,54 @@ export default function MarketSwitcher({ toTop, className, textButton }: MarketS
     >
       <div className="MarketSwitcher__content">
         <p className="MarketSwitcher__title">{intl.formatMessage(messages.changeMarket)}</p>
-        {availableMarkets.map((market) => {
-          const marketData = marketsData[market];
-          const config = getNetworkConfig(marketData.chainId);
-          const testnetMark = config.isFork
-            ? 'F'
-            : config.isTestnet
-            ? config.name.charAt(0).toUpperCase()
-            : undefined;
-          return (
-            <button
-              onClick={() => handleSetCurrentMarket(market)}
-              className={classNames('MarketSwitcher__market', {
-                MarketSwitcher__marketActive: currentMarket === market,
-              })}
-              type="button"
-              disabled={currentMarket === market}
-              key={market}
-            >
-              <div className="MarketSwitcher__market-content">
-                <div className="MarketSwitcher__market-inner">
-                  <div className="MarketSwitcher__logo-inner">
-                    <img src={marketData.logo} alt={market} />
-                  </div>
-
-                  <GradientText
-                    className="MarketSwitcher__marketText"
-                    colorStart={currentTheme.secondary.rgb}
-                    colorEnd={currentTheme.primary.rgb}
-                    title={intl.formatMessage(messages.market)}
-                  />
+        <div className="MarketSwitcher__Items">
+          {availableMarkets.map((market) => {
+            const marketData = marketsData[market];
+            const config = getNetworkConfig(marketData.chainId);
+            const testnetMark = config.isFork
+              ? 'F'
+              : config.isTestnet
+              ? config.name.charAt(0).toUpperCase()
+              : undefined;
+            return (
+              <button
+                onClick={() => handleSetCurrentMarket(market)}
+                className={classNames('MarketSwitcher__Items__Button MarketSwitcher__market', {
+                  MarketSwitcher__marketActive: currentMarket === market,
+                })}
+                type="button"
+                disabled={currentMarket === market}
+                key={market}
+              >
+                <div className="MarketSwitcher__market-content">
+                  {!!marketData.subLogo && (
+                    <img className="MarketSwitcher__subLogo" src={marketData.subLogo} alt="" />
+                  )}
                 </div>
 
-                {!!marketData.subLogo && (
-                  <img className="MarketSwitcher__subLogo" src={marketData.subLogo} alt="" />
-                )}
-              </div>
-
-              {testnetMark && <span className="MarketSwitcher__kovan">{testnetMark}</span>}
-            </button>
-          );
-        })}
+                {testnetMark && <span className="MarketSwitcher__kovan">{testnetMark}</span>}
+              </button>
+            );
+          })}
+        </div>
       </div>
-
       <style jsx={true} global={true}>
         {staticStyles}
       </style>
       <style jsx={true} global={true}>{`
+        .MarketSwitcher__Items {
+          display: flex;
+          justify-content: center;
+          gap: 11px;
+          margin-bottom: 15px;
+        }
+        .MarketSwitcher__Items__Button {
+          width: 40px;
+        }
         .MarketSwitcher {
           border-color: black;
           border-width: 2px;
           border-style: solid;
-          background: white;
 
           &__text-button {
             color: ${currentTheme.primary.hex};

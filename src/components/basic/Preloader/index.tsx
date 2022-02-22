@@ -3,9 +3,6 @@ import { useIntl } from 'react-intl';
 import classNames from 'classnames';
 import { useThemeContext } from '@aave/aave-ui-kit';
 
-import background from '../../../images/background.svg';
-import backgroundDark from '../../../images/backgroundDark.svg';
-
 import messages from './messages';
 import staticStyles from './style';
 
@@ -29,7 +26,7 @@ export default function Preloader({
   withBackground,
 }: PreloaderProps) {
   const intl = useIntl();
-  const { currentTheme, isCurrentThemeDark } = useThemeContext();
+  const { currentTheme } = useThemeContext();
 
   return (
     <div
@@ -64,14 +61,6 @@ export default function Preloader({
           <h4>{subCaption}</h4>
           <p>{subDescription}</p>
         </div>
-      )}
-
-      {withBackground && (
-        <img
-          className="Preloader__background"
-          src={isCurrentThemeDark ? backgroundDark : background}
-          alt=""
-        />
       )}
 
       <style jsx={true} global={true}>
