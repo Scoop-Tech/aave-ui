@@ -1,3 +1,4 @@
+import aacc from './aacc.svg';
 import aaave from './aaave.svg';
 import aampl from './aampl.svg';
 import aavax from './aavax.svg';
@@ -50,6 +51,7 @@ interface Images {
 }
 
 export default {
+  aacc,
   asusd,
   asnx,
   atusd,

@@ -16,6 +16,27 @@ export interface Asset {
 
 export const assetsList: Asset[] = [
   {
+    name: 'KLIMA',
+    symbol: 'KLIMA',
+    color: '#b6509e',
+    icon: icons.ren,
+    aIcon: aIcons.ren,
+  },
+  {
+    name: 'BCT',
+    symbol: 'BCT',
+    color: '#b6509e',
+    icon: icons.ren,
+    aIcon: aIcons.ren,
+  },
+  {
+    name: 'ACC',
+    symbol: 'ACC',
+    color: '#b6509e',
+    icon: icons.acc,
+    aIcon: aIcons.aacc,
+  },
+  {
     name: 'Aave',
     symbol: 'AAVE',
     color: '#b6509e',

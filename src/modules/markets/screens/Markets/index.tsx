@@ -30,6 +30,7 @@ export default function Markets() {
   const [isPriceInUSD, setIsPriceInUSD] = useState(
     localStorage.getItem('marketsIsPriceInUSD') === 'true'
   );
+
   const [sortName, setSortName] = useState('');
   const [sortDesc, setSortDesc] = useState(false);
   let totalLockedInUsd = valueToBigNumber('0');
@@ -115,17 +116,6 @@ export default function Markets() {
 
       <div className="Markets__size">
         <TotalMarketsSize value={totalLockedInUsd.toNumber()} />
-      </div>
-
-      <div className="Markets__price-switcher">
-        <LabeledSwitcher
-          value={!isPriceInUSD}
-          leftOption="USD"
-          rightOption={intl.formatMessage(messages.native)}
-          onToggle={() =>
-            toggleLocalStorageClick(isPriceInUSD, setIsPriceInUSD, 'marketsIsPriceInUSD')
-          }
-        />
       </div>
 
       <div className="Markets__market-switcher">

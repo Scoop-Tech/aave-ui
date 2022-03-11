@@ -1,3 +1,4 @@
+import acc from './acc.svg';
 import aave from './aave.svg';
 import ampl from './ampl.svg';
 import avax from './avax.svg';
@@ -54,6 +55,7 @@ interface Images {
 }
 
 export default {
+  acc,
   aave,
   ampl,
   busd,
