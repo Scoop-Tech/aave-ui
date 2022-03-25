@@ -61,8 +61,8 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
     publicJsonRPCUrl: ['https://rpc-mumbai.maticvigil.com'],
     publicJsonRPCWSUrl: 'wss://rpc-mumbai.maticvigil.com',
     addresses: {
-      walletBalanceProvider: '0x29ddd667096F83ec5a2000FffAFd0d0464565a1C',
-      uiPoolDataProvider: '0x899fB6419Aab73EB1D1A762FB8DA0D6fEa38a8C4',
+      walletBalanceProvider: '0x8c5069Ac1D74eD719a4d79fd53509C80521BaA5A',
+      uiPoolDataProvider: '0x0973695AD6C53084b5Edd3A9E9495FBBd7eC3069',
     },
     protocolDataUrl: 'https://api.thegraph.com/subgraphs/name/aave/aave-v2-polygon-mumbai',
     baseAsset: 'MATIC',
