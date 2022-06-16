@@ -6,7 +6,7 @@ import { DropdownWrapper, rgba, textCenterEllipsis, useThemeContext } from '@aav
 
 import { useUserWalletDataContext } from '../../../libs/web3-data-provider';
 import { useMenuContext } from '../../../libs/menu';
-import Link from '../../basic/Link';
+// import Link from '../../basic/Link';
 import ConnectButton from '../../ConnectButton';
 
 import staticStyles from './style';

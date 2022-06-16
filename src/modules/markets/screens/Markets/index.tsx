@@ -7,14 +7,14 @@ import {
   useDynamicPoolDataContext,
   useStaticPoolDataContext,
 } from '../../../../libs/pool-data-provider';
-import toggleLocalStorageClick from '../../../../helpers/toggle-local-storage-click';
+// import toggleLocalStorageClick from '../../../../helpers/toggle-local-storage-click';
 import TopPanelWrapper from '../../../../components/wrappers/TopPanelWrapper';
 import ScreenWrapper from '../../../../components/wrappers/ScreenWrapper';
 import SelectMarketPanel from '../../components/SelectMarketPanel';
 import MarketTable from '../../components/MarketTable';
 import MarketTableItem from '../../components/MarketTableItem';
 import TotalMarketsSize from '../../components/TotalMarketsSize';
-import LabeledSwitcher from '../../../../components/basic/LabeledSwitcher';
+// import LabeledSwitcher from '../../../../components/basic/LabeledSwitcher';
 import MarketMobileCard from '../../components/MarketMobileCard';
 
 import messages from './messages';
@@ -27,9 +27,10 @@ export default function Markets() {
   const { marketRefPriceInUsd } = useStaticPoolDataContext();
   const { reserves } = useDynamicPoolDataContext();
   const { reserveIncentives } = useIncentivesDataContext();
-  const [isPriceInUSD, setIsPriceInUSD] = useState(
-    localStorage.getItem('marketsIsPriceInUSD') === 'true'
-  );
+  const [
+    isPriceInUSD,
+    // setIsPriceInUSD
+  ] = useState(localStorage.getItem('marketsIsPriceInUSD') === 'true');
 
   const [sortName, setSortName] = useState('');
   const [sortDesc, setSortDesc] = useState(false);

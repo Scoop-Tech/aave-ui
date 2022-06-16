@@ -8,11 +8,11 @@ import {
 } from '../../libs/web3-data-provider';
 
 import WarningArea from '../WarningArea';
-import Link from '../basic/Link';
+// import Link from '../basic/Link';
 import UnlockWalletWrapper from './components/ConnectWalletWrapper';
 import WalletCard from './components/WalletCard';
 import LedgerChecklist from './components/LedgerChecklist';
-import SelectPreferredNetwork from './components/SelectPreferredNetwork';
+// import SelectPreferredNetwork from './components/SelectPreferredNetwork';
 import {
   AUTHEREUM_API_KEY,
   getFortmaticKeyByChainId,

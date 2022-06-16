@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
 import { useIntl } from 'react-intl';
 import classNames from 'classnames';
-import { rgba, useThemeContext, DropdownWrapper, SocialIcons } from '@aave/aave-ui-kit';
+import {
+  rgba,
+  useThemeContext,
+  DropdownWrapper,
+  // SocialIcons
+} from '@aave/aave-ui-kit';
 
 import { useUserWalletDataContext } from '../../../libs/web3-data-provider';
 import Link from '../../basic/Link';
-import ConnectionModeSwitcher from '../ConnectionModeSwitcher';
+// import ConnectionModeSwitcher from '../ConnectionModeSwitcher';
 
 import messages from './messages';
 import staticStyles from './style';
 import { useProtocolDataContext } from '../../../libs/protocol-data-provider';
 import { moreNavigation } from '../navigation';
-import { socialIcons } from '../../../ui-config';
+// import { socialIcons } from '../../../ui-config';
 
 export default function MoreButton() {
   const intl = useIntl();

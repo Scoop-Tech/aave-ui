@@ -4,7 +4,7 @@ import { useThemeContext } from '@aave/aave-ui-kit';
 
 import ContentWrapperWithTopLine from '../ContentWrapperWithTopLine';
 import AssetsFilterPanel from '../../AssetsFilterPanel';
-import MarketSwitcher from '../../market/MarketSwitcher';
+// import MarketSwitcher from '../../market/MarketSwitcher';
 import Row from '../../basic/Row';
 import Value from '../../basic/Value';
 

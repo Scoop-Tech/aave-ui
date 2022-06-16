@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { useThemeContext } from '@aave/aave-ui-kit';
 
 import { useProtocolDataContext } from '../../../../libs/protocol-data-provider';
-import MarketSelectButton from '../../../../components/market/MarketSelectButton';
+// import MarketSelectButton from '../../../../components/market/MarketSelectButton';
 import MarketSwitcher from '../../../../components/market/MarketSwitcher';
 
 import staticStyles from './style';
@@ -18,14 +18,14 @@ interface SelectMarketPanelProps {
 
 export default function SelectMarketPanel({ isCollapse }: SelectMarketPanelProps) {
   const { currentTheme } = useThemeContext();
-  const { currentMarket, setCurrentMarket } = useProtocolDataContext();
+  // const { currentMarket, setCurrentMarket } = useProtocolDataContext();
 
   return (
     <div className={classNames('SelectMarketPanel', { SelectMarketPanel__collapse: isCollapse })}>
       {/* //** select chain */}
       <div className="SelectMarketPanel__markets">
         {availableMarkets.map((market) => {
-          const marketData = marketsData[market];
+          // const marketData = marketsData[market];
           return (
             <></>
             // <MarketSelectButton

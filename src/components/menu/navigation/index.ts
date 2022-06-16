@@ -3,8 +3,8 @@ import {
   moreMenuExtraItems,
   moreMenuItems,
   moreMenuMobileOnlyItems,
-  stakeConfig,
-  governanceConfig,
+  // stakeConfig,
+  // governanceConfig,
 } from '../../../ui-config';
 import { MarketDataType } from '../../../helpers/config/types';
 import { isFeatureEnabled } from '../../../helpers/config/markets-and-network-config';

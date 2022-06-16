@@ -1,6 +1,6 @@
 import {
-  eEthereumTxType,
-  EthereumTransactionTypeExtended,
+  // eEthereumTxType,
+  // EthereumTransactionTypeExtended,
   tEthereumAddress,
   transactionType,
 } from '@aave/contract-helpers';
