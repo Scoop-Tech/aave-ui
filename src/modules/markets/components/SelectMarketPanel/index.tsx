@@ -2,14 +2,14 @@ import React from 'react';
 import classNames from 'classnames';
 import { useThemeContext } from '@aave/aave-ui-kit';
 
-import { useProtocolDataContext } from '../../../../libs/protocol-data-provider';
+// import { useProtocolDataContext } from '../../../../libs/protocol-data-provider';
 // import MarketSelectButton from '../../../../components/market/MarketSelectButton';
 import MarketSwitcher from '../../../../components/market/MarketSwitcher';
 
 import staticStyles from './style';
 import {
   availableMarkets,
-  marketsData,
+  // marketsData,
 } from '../../../../helpers/config/markets-and-network-config';
 
 interface SelectMarketPanelProps {
