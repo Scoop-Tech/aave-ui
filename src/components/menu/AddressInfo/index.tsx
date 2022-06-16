@@ -83,7 +83,7 @@ export default function AddressInfo() {
               {ensName ? <p className="AddressInfo__content-ens">{ensName}</p> : <></>}
             </div>
 
-            <Link
+            {/* <Link
               to="/history"
               className="AddressInfo__contentButton ButtonLink"
               onClick={() => {
@@ -92,7 +92,7 @@ export default function AddressInfo() {
               }}
             >
               <span>{intl.formatMessage(messages.history)}</span>
-            </Link>
+            </Link> */}
 
             {(currentProviderName?.includes('ledger') || availableAccounts.length > 1) && (
               <button

@@ -138,11 +138,11 @@ export default function ConnectWalletModal({
       onBackdropPress={onBackdropPress}
       className="ConnectWalletModal"
     >
-      <SelectPreferredNetwork
+      {/* <SelectPreferredNetwork
         preferredNetwork={preferredChainId}
         onSelectPreferredNetwork={onSelectPreferredChainId}
         supportedNetworks={supportedChainIds}
-      />
+      /> */}
 
       {error && (
         <WarningArea
@@ -192,7 +192,7 @@ export default function ConnectWalletModal({
       )}
 
       <div className="ConnectWalletModal__privacy-inner">
-        <p>
+        {/* <p>
           {intl.formatMessage(messages.needHelp, {
             readOurFAQ: (
               <Link
@@ -205,7 +205,7 @@ export default function ConnectWalletModal({
               />
             ),
           })}
-        </p>
+        </p> */}
         <p>
           <UnlockWalletExtraText intl={intl} />
         </p>

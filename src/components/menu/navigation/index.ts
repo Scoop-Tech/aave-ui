@@ -42,16 +42,16 @@ const navigation: Navigation[] = [
     title: messages.swap,
     isVisible: isFeatureEnabled.liquiditySwap,
   },
-  {
-    link: '/staking',
-    title: messages.stake,
-    isVisible: () => !!stakeConfig,
-  },
-  {
-    link: '/governance',
-    title: messages.governance,
-    isVisible: () => !!governanceConfig,
-  },
+  // {
+  //   link: '/staking',
+  //   title: messages.stake,
+  //   isVisible: () => !!stakeConfig,
+  // },
+  // {
+  //   link: '/governance',
+  //   title: messages.governance,
+  //   isVisible: () => !!governanceConfig,
+  // },
 ];
 
 export const moreNavigation: Navigation[] = [...moreMenuItems, ...moreMenuExtraItems];

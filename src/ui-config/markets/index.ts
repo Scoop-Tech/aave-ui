@@ -20,10 +20,10 @@ export const marketsData: { [key in keyof typeof CustomMarket]: MarketDataType }
       faucet: true,
     },
     addresses: {
-      LENDING_POOL_ADDRESS_PROVIDER: '0xA956F3F3B7ea9660136b3EeF6f9F8cCf58689d18'.toLowerCase(),
-      LENDING_POOL: '0xF4f8c2e516329Ad65F94767eDfa9A0835821B916',
+      LENDING_POOL_ADDRESS_PROVIDER: '0xABbA3629480242F688A4fa8495451b43a1A8b3BF'.toLowerCase(),
+      LENDING_POOL: '0x2D9558a1053a03e874f0A132e6becaEc8309393C',
       WETH_GATEWAY: '0x56d28b1f6700b07a85c74122ae23ef58dEBe704e',
-      FAUCET: '0x0b3C23243106A69449e79C14c58BB49E358f9B10',
+      FAUCET: '0xEE1B8cc42894cd530C67F77F46F453Ea1CB322D4',
     },
   },
   [CustomMarket.proto_matic]: {

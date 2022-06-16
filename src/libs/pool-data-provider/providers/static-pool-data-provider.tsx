@@ -186,7 +186,7 @@ export function StaticPoolDataProvider({
         rawUserReserves: userReservesWithFixedUnderlying,
         rawReservesWithBase: reserves ? reserves : [],
         rawUserReservesWithBase: userReserves,
-        marketRefPriceInUsd: normalize(marketRefPriceInUsd, 8),
+        marketRefPriceInUsd: normalize(marketRefPriceInUsd, 6),
         marketRefCurrencyDecimals,
         isUserHasDeposits,
       }}

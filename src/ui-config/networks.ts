@@ -58,11 +58,11 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
   },
   [ChainId.mumbai]: {
     name: 'Mumbai',
-    publicJsonRPCUrl: ['https://rpc-mumbai.maticvigil.com'],
+    publicJsonRPCUrl: ['https://polygon-mumbai.infura.io/v3/fb6745abe8034d958823d2ed9184312b'],
     publicJsonRPCWSUrl: 'wss://rpc-mumbai.maticvigil.com',
     addresses: {
-      walletBalanceProvider: '0x8c5069Ac1D74eD719a4d79fd53509C80521BaA5A',
-      uiPoolDataProvider: '0x0973695AD6C53084b5Edd3A9E9495FBBd7eC3069',
+      walletBalanceProvider: '0xEFEAd0800e30f6b3a733734121EBD25e827C6c85',
+      uiPoolDataProvider: '0x51B3309E9813d61432381462764630C862e06D70',
     },
     protocolDataUrl: 'https://api.thegraph.com/subgraphs/name/aave/aave-v2-polygon-mumbai',
     baseAsset: 'MATIC',

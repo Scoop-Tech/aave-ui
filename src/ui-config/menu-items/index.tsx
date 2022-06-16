@@ -8,11 +8,11 @@ export const moreMenuItems: Navigation[] = [
     title: messages.faucet,
     isVisible: isFeatureEnabled.faucet,
   },
-  {
-    link: 'https://docs.aave.com/faq/',
-    title: messages.faq,
-    absolute: true,
-  },
+  // {
+  //   link: 'https://docs.aave.com/faq/',
+  //   title: messages.faq,
+  //   absolute: true,
+  // },
 ];
 
 export const moreMenuExtraItems: Navigation[] = [];

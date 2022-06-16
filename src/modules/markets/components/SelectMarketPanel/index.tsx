@@ -27,15 +27,16 @@ export default function SelectMarketPanel({ isCollapse }: SelectMarketPanelProps
         {availableMarkets.map((market) => {
           const marketData = marketsData[market];
           return (
-            <MarketSelectButton
-              className="SelectMarketPanel__select-button"
-              onClick={() => setCurrentMarket(market)}
-              logo={marketData.logo}
-              chainId={marketData.chainId}
-              subLogo={marketData.subLogo}
-              disabled={market === currentMarket}
-              key={market}
-            />
+            <></>
+            // <MarketSelectButton
+            //   className="SelectMarketPanel__select-button"
+            //   onClick={() => setCurrentMarket(market)}
+            //   logo={marketData.logo}
+            //   chainId={marketData.chainId}
+            //   subLogo={marketData.subLogo}
+            //   disabled={market === currentMarket}
+            //   key={market}
+            // />
           );
         })}
       </div>

@@ -35,9 +35,8 @@ function FaucetConfirmation({
   }
 
   const handleGetTransactions = async () =>
-    await faucetService.mint({
+    await faucetService.claimAssets({
       userAddress: user.id,
-      tokenSymbol: poolReserve.symbol,
       reserve: poolReserve.underlyingAsset,
     });
 
@@ -57,7 +56,7 @@ function FaucetConfirmation({
           boxTitle={intl.formatMessage(messages.boxTitle)}
           boxDescription={intl.formatMessage(messages.boxDescription)}
           getTransactionsData={handleGetTransactions}
-          mainTxType="FAUCET_MINT"
+          mainTxType="FAUCET_CLAIM"
           goToAfterSuccess="/deposit"
           successButtonTitle={intl.formatMessage(messages.successButtonTitle)}
         >
