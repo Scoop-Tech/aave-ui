@@ -1,7 +1,8 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  description: 'Connect your wallet and jump into DeFi',
+  description:
+    'Connect your wallet and jump into DeFi (select Mumbai network in your wallet before connecting)',
 
   titleBrowserWallet: '{walletName} Wallet',
   noBrowserBrowserWallet: 'No browser wallet detected.',
